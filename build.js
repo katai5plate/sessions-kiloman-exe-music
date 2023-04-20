@@ -2,7 +2,7 @@ import fs from "fs";
 import zlib from "zlib";
 import ug from "uglify-js";
 
-const NAME = "kiloman-battle-network";
+const NAME = "kiloman-showdown-network";
 
 const text2gzip = async (text) =>
   new Promise((resolve, reject) => {

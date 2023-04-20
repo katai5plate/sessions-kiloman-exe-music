@@ -5,7 +5,7 @@ Excutable Music for the Mega Man Exe like song.
 ```
 Compo: Music
 
-Product title: Kiloman Battle Network
+Product title: Kiloman Showdown Network
 
 Author: HADHAD
 

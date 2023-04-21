@@ -10,10 +10,10 @@ Product title: KiloMan Showdown Network
 Author: HADHAD
 
 Comment:
-ロックマンエグゼっぽい曲を Excutable Music で流すっていうギャグ
+ロックマンエグゼっぽい曲を Executable Music で流すっていうギャグ
 Jack in!! KiloMan.EXE, Transmit!
 ---
-3 KB, JavaScript, Tracker Music (ZzFXM)
+Executable Music (JavaScript / 3 KB), Tracker Music (ZzFXM)
 
 Comment for the organizers:
 * ボタンを押すと曲が終わるカウントダウンが始まりますが、目安です。微妙にズレることがあります。

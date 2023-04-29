@@ -1,5 +1,7 @@
 # kilo-man-executable-music
 
+## [PLAY!](https://katai5plate.github.io/sessions-kiloman-exe-music/dist/kiloman-showdown-network.html)
+
 Excutable Music for the Mega Man Exe like song.
 
 ```

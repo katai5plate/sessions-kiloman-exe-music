@@ -46,9 +46,11 @@ const kb = (text) => Buffer.byteLength(text, "utf8") / 1024;
 const load = (path) => fs.readFileSync(path, { encoding: "utf8" });
 
 (async () => {
+  const music = load("./src/music.js");
+
   const js = [
     load("./src/zzfx.js"),
-    `const music = ${load("./src/music.js")};`,
+    `const music = ${music};`,
     load("./src/player.js"),
   ].join("\n");
   const uglified = ug.minify(js, {
@@ -101,4 +103,32 @@ const load = (path) => fs.readFileSync(path, { encoding: "utf8" });
   const html = `<body onload="${loader}">`;
   fs.writeFileSync(`./dist/${NAME}.html`, html);
   console.log("LCAL:", kb(html), "KB", `${NAME}`);
+
+  const song = eval(music);
+  song[song.length - 1].title = NAME;
+  song[song.length - 1].instruments = [
+    "kick",
+    "snare",
+    "hihat",
+    "bass",
+    "pico",
+    "hit",
+    "melody",
+    "tom",
+    "lead",
+    "bomb",
+  ];
+  song[song.length - 1].patterns = [
+    "A-1",
+    "A-2",
+    "A-3",
+    "A-4",
+    "B-1",
+    "B-2",
+    "Finish",
+  ];
+  fs.writeFileSync(
+    "./for-tracker.js",
+    JSON.stringify(song).replace(/null/g, "")
+  );
 })();
